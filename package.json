@@ -1,0 +1,30 @@
+{
+  "name": "chess-etudes",
+  "version": "1.0.0",
+  "description": "Test task - make Chess Etudes App",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cannabiscat/chess-etudes.git"
+  },
+  "keywords": [
+    "chess",
+    "test",
+    "task"
+  ],
+  "author": "Alex Vyatkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cannabiscat/chess-etudes/issues"
+  },
+  "homepage": "https://github.com/Cannabiscat/chess-etudes#readme",
+  "devDependencies": {
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
