@@ -1,0 +1,14 @@
+{
+    "extends": "airbnb-base",
+    "installedESLint": true,
+    "plugins": [
+        "import"
+    ],
+    "env": {
+        "browser": true
+    },
+    "rules": {
+        "no-param-reassign": "off",
+        "no-mixed-operators": "off"
+    }
+}

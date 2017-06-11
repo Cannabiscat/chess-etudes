@@ -1,0 +1,32 @@
+body * {
+  display: flex;
+  margin: auto;
+}
+.main {
+  width: 100vw;
+  flex-flow: column;
+}
+.main > div {
+  margin: auto;
+}
+.field {
+  background-image: url('../brown.svg');
+  width: 20vw;
+  height: 20vw;
+}
+.figure-container {
+  width: 20vw;
+  height: calc(20vw/8)
+}
+.draggable {
+  margin: 0;
+}
+.plus {
+  margin: auto 0 auto auto;
+}
+.figure-container > div {
+  /*width: calc(20vw/8 - 4px);*/
+  /*height: calc(20vw/8 - 4px);*/
+  display: block;
+  /*padding: 2px*/
+}
