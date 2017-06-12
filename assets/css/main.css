@@ -9,10 +9,11 @@ body * {
 .main > div {
   margin: auto;
 }
-.field {
-  background-image: url('../brown.svg');
+#field > img {
   width: 20vw;
-  height: 20vw;
+}
+#pieces {
+  flex-direction: column;
 }
 .figure-container {
   width: 20vw;
@@ -23,10 +24,4 @@ body * {
 }
 .plus {
   margin: auto 0 auto auto;
-}
-.figure-container > div {
-  /*width: calc(20vw/8 - 4px);*/
-  /*height: calc(20vw/8 - 4px);*/
-  display: block;
-  /*padding: 2px*/
 }

@@ -9,15 +9,18 @@ const fieldCoords = {
 };
 const cellWidth = field.clientWidth / 8;
 Array.prototype.slice
-  .call(document.getElementsByClassName('draggable'))
-  .forEach((elem) => {
-    elem.style.width = `${cellWidth}px`;
-    elem.style.height = `${cellWidth}px`;
-    moving(elem, fieldCoords, cellWidth);
-  });
-Array.prototype.slice
-  .call(document.getElementsByClassName('kings'))
+  .call(document.getElementsByClassName('piece'))
   .forEach((elem) => {
     elem.style.width = `${cellWidth}px`;
     elem.style.height = `${cellWidth}px`;
   });
+document.onmousedown = (e) => {
+  const obj = document
+    .elementFromPoint(e.clientX, e.clientY)
+    .closest('.draggable');
+  const movingObject = obj.classList.contains('multiple')
+    ? obj.cloneNode(true)
+    : obj;
+  movingObject.classList.remove('multiple');
+  moving(movingObject, fieldCoords, cellWidth, e);
+};
